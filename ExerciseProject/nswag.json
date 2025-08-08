@@ -1,0 +1,25 @@
+﻿{
+  "runtime": "Net90", // Change this to your .NET version: Net60, Net70, etc.
+  "documentGenerator": {
+    "fromSwagger": {
+      "url": "https://localhost:7010/swagger/v1/swagger.json"
+    }
+  },
+  "codeGenerators": {
+    "openApiToTypeScriptClient": {
+      "className": "{controller}Client",
+      "moduleName": "",
+      "template": "Angular",
+      "httpClass": "HttpClient",
+      "useSingletonProvider": true,
+      "injectionTokenType": "InjectionToken",
+      "rxJsVersion": 8.0,
+      "output": "D:\\Angular application\\exerciseproject frontend\\exerciseprojectangular\\src",
+      "baseUrlTokenName": "API_BASE_URL",
+      "generateClientClasses": true,
+      "generateDtoTypes": true,
+      "useTransformOptionsMethod": true,
+      "useTransformResultMethod": true
+    }
+  }
+}
